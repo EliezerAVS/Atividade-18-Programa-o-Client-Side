@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Formulário 1</title>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 50px;
+        }
+        div{
+            position: relative;
+            left: 430px;
+            right: 430px;
+            width: 470px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário 1</h1>
+    <div>
+        <h2>Deixe um comentário</h2>
+        <label for="name"><b>Nome:</b></label>
+        <br/>
+        <input type="text" id="nome" name="nome" size="60" maxlength="30"/>
+        <br/>
+        <label for="email"><b>E-mail:</b></label>
+        <br/>
+        <input type="email" id="email" name="email" size="60" maxlength="30"/>
+        <br/>
+        <label for="website"><b>Website:</b></label>
+        <br/>
+        <input type="url" id="url" name="url" size="60" maxlength="100"/>
+        <br/>
+        <label for="coment"><b>Comentário:</b></label>
+        <br/>
+        <textarea cols="62" rows="10" id="coment" name="coment"></textarea>
+        <br/>
+        <p><b>Observação:</b> Seu comentário será publicado após passar pelo moderador</p>
+        <br/>
+        <input type="button" id="enviar" name="enviar" value="Enviar Comentário"/>
+    </div>
+</body>
+</html>

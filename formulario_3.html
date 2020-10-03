@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Formulário 3</title>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 50px;
+        }
+        #externa{
+            position: relative;
+            left: 350px;
+            right: 350px;
+            width: 630px;
+            border: 2px solid green;
+            background-color: rgba(144, 238, 144, 0.2);
+        }
+        #cadastro{
+            margin: 40px 20px 10px 70px;
+            color: green;
+        }
+        #dados{
+            margin-top: 20px;
+            margin-bottom: 15px;
+            height: 120px;
+            color: green;
+            float: left;
+        }
+        #local{
+            margin-top: 20px;
+            margin-bottom: 15px;
+            height: 120px;
+            color: green;
+            float: right;
+        }
+        #idade{
+            margin-top: 15px;
+            margin-bottom: 15px;
+            color: green;
+            clear: both;
+        }
+        #esportes{
+            margin-top: 15px;
+            margin-bottom: 15px;
+            color: green;
+        }
+        #comentario{
+            margin: 15px 20px 10px 70px;
+            color: green;
+        }
+        legend{
+            border-style: groove;
+            font-weight: bold;
+        }
+        select{
+            width: 212px;
+        }
+        .espacoTabela{
+            padding-left: 70px;
+        }
+        #botao{
+            margin: 15px 20px 40px 70px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário 3</h1>
+    <div id="externa">
+        <fieldset id="cadastro">
+            <legend>Cadastro Geral</legend>
+            <fieldset id="dados">
+                <legend>Dados pessoais</legend>
+                <label for="">Nome Completo:</label>
+                <br/>
+                <input type="text" id="nome" name="nome" size="25" maxlength="30"/>
+                <br/><br/>
+                <label for="">Profissão:</label>
+                <br/>
+                <select id="profissao" name="profissao">
+                    <option value="" selected="selected">Sua profissão</option>
+                </select>
+            </fieldset>
+            <fieldset id="local">
+                <legend>Localização</legend>
+                <label for="">E-mail:</label>
+                <br/>
+                <input type="email" id="email" name="email" size="25" maxlength="30"/>
+                <br/><br/>
+                <label for="">Rua:</label>
+                <br/>
+                <input type="text" id="rua" name="rua" size="25" maxlength="50"/>
+                <br/>
+            </fieldset>
+            <br/>
+            <fieldset id="idade">
+                <legend>Faixa etária</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="radio" id="opt" name="opt" value="ate_20"/>
+                            <label for="opt">até 20 anos</label>
+                        </td>
+                        <td class="espacoTabela">
+                            <input type="radio" id="opt" name="opt" value="40_ate_50"/>
+                            <label for="opt">mais de 40 até 50 anos</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="opt" name="opt" value="20_ate_30"/>
+                            <label for="opt">mais de 20 até 30 anos</label>
+                        </td>
+                        <td class="espacoTabela">
+                            <input type="radio" id="opt" name="opt" value="40_ate_50"/>
+                            <label for="opt">mais de 50 até 60 anos</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="opt" name="opt" value="30_ate_40"/>
+                            <label for="opt">mais de 30 até 40 anos</label>
+                        </td>
+                        <td class="espacoTabela">
+                            <input type="radio" id="opt" name="opt" value="mais_60"/>
+                            <label for="opt">mais de 60</label>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset id="esportes">
+                <legend>Esportes que pratica</legend>
+                <input type="checkbox" id="futCampo" name="futCampo" value="futCampo"/>
+                <label for="futCampo">Futebol de campo</label>
+                <br>
+                <input type="checkbox" id="futSalao" name="futSalao" value="futSalao"/>
+                <label for="futSalao">Futebol de salão</label>
+                <br>
+                <input type="checkbox" id="futSociety" name="futSociety" value="futSociety"/>
+                <label for="futSociety">Futebol society</label>
+                <br>
+                <input type="checkbox" id="volleyQuadra" name="volleyQuadra" value="volleyQuadra"/>
+                <label for="volleyQuadra">Volley de quadra</label>
+                <br>
+                <input type="checkbox" id="volleyPraia" name="volleyPraia" value="volleyPraia"/>
+                <label for="volleyPraia">Volley de praia</label>
+                <br>
+                <input type="checkbox" id="natacaoPiscina" name="natacaoPiscina" value="natacaoPiscina"/>
+                <label for="natacaoPiscina">Natação em piscina</label>
+                <br>
+                <input type="checkbox" id="natacaoMar" name="natacaoMar" value="natacaoMar"/>
+                <label for="natacaoMar">Natação em mar aberto</label>
+                <br>
+            </fieldset>
+        </fieldset>
+        <fieldset id="comentario">
+            <legend>Comentário</legend>
+            <label for="">Mensagem:</label>
+            <br/>
+            <textarea id="coment" name="coment" cols="40" rows="10"></textarea>
+        </fieldset>
+        <div id="botao">
+            <input type="submit" id="enviar" name="enviar" value="Enviar"/>
+            <input type="reset" id="limpar" name="limpar" value="Limpar"/>
+        </div>
+    </div>
+</body>
+</html>
